@@ -55,8 +55,8 @@ function viewProducts() {
                 console.log('Price: ' + data[i].price)
                 console.log('Quantity: ' + data[i].stock_quantity)
                 console.log('\n------------------------------------\n')
-                start();
             }
+            start();
         }
     )
 }
