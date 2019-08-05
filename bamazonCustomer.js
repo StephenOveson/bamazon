@@ -88,8 +88,8 @@ function buy() {
                             function (err) {
                                 if (err) throw err;
                                 console.log(chosenItem.product_name + ' purchased succesfully')
-                                console.log('Total Price: ' + (answer.quantity * chosenItem.price))
-                                console.log('Quantity Remaining: ' + (chosenItem.stock_quantity - answer.quantity))
+                                console.log('Total Price: ' + (parseInt(answer.quantity) * chosenItem.price))
+                                console.log('Quantity Remaining: ' + (chosenItem.stock_quantity - parseInt(answer.quantity)))
                                 console.log('\n------------------------------------\n')
                                 setTimeout(start, 6000)
                             })
