@@ -18,6 +18,7 @@ Tools:
 Instructions:
         Using the CLI do an "NPM install"
         This should install the packages needed to run our application
+        Using the code found in the bamazondb.sql you can put that into sequel pro or another sql program and create a database with a table that contains certain values.
         Now do a "node bamazonCustomer.js"
         This will start our storefront that allows customers to purchase items that are "in stock" according to our database
         You can do a "node bamazonManager.js" and gain access to view all products, add stock to a product, view which products are low on stock, and add a new project.
