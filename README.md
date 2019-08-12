@@ -23,7 +23,8 @@ Instructions:
         This will start our storefront that allows customers to purchase items that are "in stock" according to our database
         You can do a "node bamazonManager.js" and gain access to view all products, add stock to a product, view which products are low on stock, and add a new project.
 
-### Screenshots
+### Screenshots and Video
+![bamazon customer demonstration](./bamazonCustomer.gif)
 
 
 ### Technologies Used
