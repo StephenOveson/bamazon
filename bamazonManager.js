@@ -127,12 +127,12 @@ function addProduct() {
     inquirer
         .prompt([
             {
-                name: 'name',
+                name: 'product_name',
                 type: 'input',
                 message: 'Input the name of the product you wish to add'
             },
             {
-                name: 'department',
+                name: 'department_name',
                 type: 'input',
                 message: 'Input the category for the product'
             },
@@ -142,27 +142,13 @@ function addProduct() {
                 message: 'Input the price of the product'
             },
             {
-                name: 'quantity',
+                name: 'stock_quantity',
                 type: 'input',
                 message: 'Input the quantity'
             },
         ]).then(function(answer){
             connection.query(
-                'INSERT INTO products(product_name, department_name, price, stock_quantity) VALUES(?,?,?,?)',
-                [
-                    {
-                        product_name: answer.name
-                    },
-                    {
-                        department_name: answer.department
-                    },
-                    {
-                        price: parseFloat(answer.price).toFixed(2)
-                    },
-                    {
-                        stock_quantity: parseInt(answer.quantity)
-                    }
-                ],
+                'INSERT INTO products SET ?', answer,
                 function(err, results){
                     if (err) throw err;
                     console.log('Added ' + results.affectedRows + ' new product')

@@ -24,7 +24,12 @@ Instructions:
         You can do a "node bamazonManager.js" and gain access to view all products, add stock to a product, view which products are low on stock, and add a new project.
 
 ### Screenshots and Video
+* Demonstration of the bamazonCustomer.js file
 ![bamazon customer demonstration](./bamazonCustomer.gif)
+
+* Demonstration of the bamazonManager.js file
+![bamazon customer demonstration](./bamazonManager.gif)
+
 
 
 ### Technologies Used
