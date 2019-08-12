@@ -28,6 +28,7 @@ Instructions:
 ![bamazon customer demonstration](./bamazonCustomer.gif)
 
 * Demonstration of the bamazonManager.js file
+
 ![bamazon customer demonstration](./bamazonManager.gif)
 
 
